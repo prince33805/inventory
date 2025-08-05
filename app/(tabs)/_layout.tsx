@@ -28,6 +28,15 @@ export default function TabLayout() {
         <Tabs.Screen
           name="index"
           options={{
+            title: 'Dashboard',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="bar-chart" color={color} size={size} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="inventory"
+          options={{
             title: 'Inventory',
             tabBarLabel: 'Inventory',
             tabBarIcon: ({ color, size }) => (
@@ -41,15 +50,6 @@ export default function TabLayout() {
             title: 'Logistics',
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="car" color={color} size={size} />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="dashboard"
-          options={{
-            title: 'Dashboard',
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="bar-chart" color={color} size={size} />
             ),
           }}
         />

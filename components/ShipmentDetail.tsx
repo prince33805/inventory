@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   },
   header: { flexDirection: 'row', alignItems: 'center', padding: 16 },
   headerText: {
-    paddingRight: 32,
+    paddingRight: 24,
     flex: 1,
     textAlign: 'center',
     fontWeight: 'bold',

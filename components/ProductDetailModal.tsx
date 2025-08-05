@@ -71,7 +71,7 @@ export default function ProductDetailsModal({
 
           {/* Image */}
           <Image
-            source={require('@/assets/images/favicon.png')}
+            source={require('@/assets/images/111.png')}
             style={styles.productImage}
             resizeMode="cover"
           />

@@ -51,7 +51,7 @@ export const CreateEditProductModal: React.FC<CreateEditProductModalProps> = ({
             color="#121416"
             onPress={onClose}
           />
-          <Text style={styles.headerText}>Edit Product</Text>
+          <Text style={styles.headerText}>Create Product</Text>
         </View>
 
         <View style={styles.inputGroup}>

@@ -45,7 +45,6 @@ export default function LogisticsScreen() {
         <>
           <View style={styles.header}>
             <Text style={styles.headerTitle}>Logistics</Text>
-            <View style={{ width: 24 }} />
           </View>
 
           <View style={styles.tabs}>
@@ -72,7 +71,7 @@ export default function LogisticsScreen() {
                       <Text style={styles.recipientText}>To: {item.name}</Text>
                     </View>
                   </View>
-                  <Text style={styles.statusText}>{item.status}</Text>
+                  <Text style={[styles.statusText,styles.statusButton]}>{item.status}</Text>
                 </View>
               </TouchableOpacity>
             ))}
@@ -167,6 +166,14 @@ const styles = StyleSheet.create({
   statusText: {
     fontSize: 16,
     color: '#121416',
+  },
+  statusButton: {
+    color: '#0284C7',
+    backgroundColor: '#E0F2FE',
+    marginBottom: 24,
+    borderRadius: 16,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
   },
   navbar: {
     flexDirection: 'row',
